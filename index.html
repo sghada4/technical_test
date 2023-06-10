@@ -1,199 +1,830 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+<html lang="en">
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NavBar -->
-    <div class="topnav">
-      <img src="./images/logo.PNG" alt="logo" id="logo" />
-      <a class="active" href="#categories">Categories</a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input
-            type="text"
-            placeholder="            Search for anything"
-            name="search"
-          />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-      <a href="#business">Udemy Business</a>
-      <a href="#teach">Teach on Udemy</a>
-      <a href="#cart" style="margin-top: 2px">
-        <img
-          src="./images/chariot-de-chariot.png"
-          alt="cart"
-          style="width: 30px; height: 25px"
-        />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/icons/icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: HeroBiz
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo/logo.PNG" alt="">
       </a>
-      <a
-        href="#login"
-        style="
-          margin-top: 3px;
-          border: 1px solid black;
-          padding: 8px 20px;
-          font-weight: bold;
-        "
-        >Log in</a
-      >
-      <a
-        href="#signup"
-        style="
-          margin-top: 3px;
-          background-color: black;
-          color: white;
-          padding: 8px 20px;
-          font-weight: bold;
-        "
-        >Sign up</a
-      >
-      <a
-        href="#language"
-        style="margin-top: 3px; border: 1px solid black; padding: 10px"
-      >
-        <img
-          src="./images/icons8-globe-50.png"
-          alt="cart"
-          style="width: 20px; height: 20px"
-        />
-      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="#"><span>Categories</span> </a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>Development</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Data Science</a></li>
+                <li><a href="#">Mobile Development</a></li>
+                <li><a href="#">Programming Languages</a></li>
+                <li><a href="#">Game Development</a></li>
+                <li><a href="#">Database Design & Development</a></li>
+                <li><a href="#">Software Testing</a></li>
+                <li><a href="#">Software Engineering</a></li>
+                <li><a href="#">Software Development Tools</a></li>
+                <li><a href="#">No-Code Development</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Business</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Finance & Accounting</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>IT & Software</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Office Productivity</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Personal Development</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Design</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Marketing</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Lifestyle</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Photography & Video</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Health & Fitness</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Music</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Teaching & Academics</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Entrepreneurship</a></li>
+                  <li><a href="#">Communication</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Business Law</a></li>
+                  <li><a href="#">Business Analytics & Intelligence</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">Other Business</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <form class="form-inline " style="display: flex;">
+          
+            <input class="form-control " type="search" name="searchKey" id="searchKey" style="border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; border: solid 1px black;"
+              placeholder="Search for anything">
+          </form>
+          <li class="dropdown"><a href="#"><span>Udemy Business</span></a>
+            <ul>
+              <div class="col-lg-4">
+                <div class="portfolio-info">
+                  <h3 style="color: white;">Get your team access to over <br> 22,000 to Udemy courses, <br> anytime, anywhere.</h3>
+                  <!-- <a class="btn-getstarted scrollto" href="index.html#about">Try Udemy Business</a> -->
+                </div>
+                
+              </div>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Teach on Udemy</span></a>
+            <ul>
+              <div class="col-lg-4">
+                <div class="portfolio-info">
+                  <h3 style="color: white;">Turn what tou know into an <br> opportunity and reach <br> millions around the world.</h3>
+                  <!-- <a class="btn-getstarted scrollto" href="index.html#about">Try Udemy Business</a> -->
+                </div>
+                
+              </div>
+            </ul>
+          </li>
+
+        
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+<img src="assets/img/icons/chariot-de-chariot.png" alt="" style="width: 2%; height: 2%;">      
+<a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Login</a>
+<a style="background-color: black; color: white; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Sign up</a>
+<img src="assets/img/icons/icons8-globe-50.png" alt="" style="width: 2%; height: 2%;">      
+
     </div>
-    <!-- NavBar end -->
-    <!-- main -->
-    <div>
-      <div id="head">
-        <img
-          src="./images/background.png"
-          alt="background"
-          id="background-img"
-        />
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">New to Udemy? Lucky you.</h5>
-            <p class="card-text">
-              Enjoy new-learner savings with courses starting at $13.99 for a
-              very limited time.
-            </p>
-          </div>
+  </header><!-- End Header -->
+
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="assets/img/icons/background.png" >
+      <div class="card" style=" width: 28%;
+      position: absolute;
+      top: 35%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      padding: 2%;
+      box-shadow: 0 0.5% 1% #e5e6e8;">
+        <div class="card-body">
+          <h3 style="font-weight: bold;" class="card-title">New to Udemy? Lucky you.</h3>
+          <p class="card-text">
+            Enjoy new-learner savings with courses starting at $13.99 for a
+            very limited time.
+          </p>
         </div>
       </div>
-      <div class="main-p">
-        <h1>A broad selection of courses</h1>
-        <p>
-          Choose from over 210,000 online video courses with new additions
-          published every month
-        </p>
-      </div>
+      <h1>A broad selection of courses</h1>
+      <p>
+        Choose from over 210,000 online video courses with new additions
+        published every month
+      </p>
+      
     </div>
-    <!-- main end-->
+  </section>
 
-    <!-- ======= Footer ======= -->
-    <footer
-      id="footer"
-      class="footer"
-      style="color: white; background-color: #1c1d1f"
-    >
-      <div class="footer-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-md-6 footer-links">
-              <ul>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#business">Udemy Business</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#teach">Teach on Udemy</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#gettheapp">Get the app </a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#about">About us </a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#contact">Contact us</a>
-                </li>
-              </ul>
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    
+    <!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+         
+
+          <div >
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Python</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Excel</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Web Development</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab4">JavaScript</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab5">Data Science</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab6">Amazon AWS</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab7">Drawing</a></li>
+            </ul><!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content" style="border: 0.5px solid black; padding: 2%;">
+
+              <div class="tab-pane fade show active" id="tab1">
+
+                <h1>Expand your career opportunities with Python</h1>
+                
+                <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
+                <a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Explore Python</a>
+                <img src="assets/img/icons/videos.PNG" style="width: 100%; margin-top: 1%;" alt="">
+                
+              </div><!-- End Tab 1 Content -->
+              <div class="tab-pane fade show active" id="tab2">
+
+                <h1>Analyze and visualize data with Excel
+                </h1>
+                
+                <p>Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world experts will show you the basics like how to organize data into sheets, rows and columns, and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies use Excel to...</p>
+                <a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Explore Excel</a>
+
+                
+              </div><!-- End Tab 1 Content -->
+              <div class="tab-pane fade show active" id="tab3">
+
+                <h1>Build websites and applications with Web Development
+                </h1>
+                
+                <p>The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.</p>
+                <a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Explore Web Development</a>
+
+                
+              </div><!-- End Tab 1 Content -->
+              <div class="tab-pane fade show active" id="tab4">
+
+                <h1>Grow your software development skills with JavaScript</h1>
+                
+                <p>JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to buil...</p>
+                <a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Explore JavaScript</a>
+
+                
+              </div><!-- End Tab 1 Content -->
+              <div class="tab-pane fade show active" id="tab5">
+
+                <h1>Lead data-driven decisions with Data Science
+                </h1>
+                
+                <p>Data science application is an in-demand skill in many industries worldwide — including finance, transportation, education, manufacturing, human resources, and banking. Explore data science courses with Python, statistics, machine learning, and more to grow your knowledge. Get data science training if you’re into research, statistics,...</p>
+                <a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Explore Data Science</a>
+
+                
+              </div><!-- End Tab 1 Content -->
+              <div class="tab-pane fade show active" id="tab6">
+
+                <h1>Become an expert in cloud computing with AWS Certification</h1>
+                
+                <p>Amazon Web Services (AWS) is a cloud computing platform with more than 200 featured services. Whether or not you aim for certification, an AWS course offers the theory and practical skills you need to land a job in cloud development, sales, engineering, networking, and more. The better you become at cloud computing, the more...</p>
+                <a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Explore Amazon AWS</a>
+
+                
+              </div><!-- End Tab 1 Content -->
+              <div class="tab-pane fade show active" id="tab7">
+
+                <h1>Expand your creative skillset with Drawing</h1>
+                
+                <p>Want to start drawing for fun or take your craft to the next level? Explore our online drawing classes and learn pencil drawing, figure drawing, cartoon drawing, character drawing for cartoons and anime, illustration, sketching, shading and more. Take an overview course on the fundamentals of drawing or zero in on an area...</p>
+                <a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Explore Drawing</a>
+
+                
+              </div><!-- End Tab 1 Content -->
+            
+
             </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <ul>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#Careers">Careers</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#Blog">Blog</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#HelpSupport">Help and Support </a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#Affiliate">Affiliate </a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#Investors">Investors</a>
-                </li>
-              </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+<h2>How learners like you are achieving their goals</h2>
+<div class="row gy-3">
+  
+          <div class="col-xl-4 col-md-6 d-flex" style="border: 1px grey solid;">
+            <div class="service-item position-relative">
+              <img src="assets/img/icons/cote.PNG" alt="">
+              <p>I am proud to say that after a few months of taking this course...I passed my exam and am now an AWS Certified Cloud Practitioner! This content was exactly what the CCP exam covered.</p>
+              <div class="d-flex align-items-center">
+                <img src="assets/img/users/wa.PNG" alt="">
+                <h4>Will A</h4>
+              </div>  
+              <hr>
+              <div class="d-flex align-items-center">
+              <img src="assets/img/icons/vid.PNG" alt="">
+              <h6><a href="" style="font-weight: bold; color: #5624D0;">[NEW] Ultimate AWS Certified Cloud Practitioner - 2023</a></h6></div>
             </div>
-            <div class="col-lg-3 col-md-6 footer-links">
-              <ul>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#Careers">Careers</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#Blog">Blog</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#HelpSupport">Help and Support </a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#Affiliate">Affiliate </a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <a href="#Investors">Investors</a>
-                </li>
-              </ul>
+              
+          </div><!-- End Service Item -->
+          <div class="col-xl-4 col-md-6 d-flex" style="border: 1px grey solid;">
+            <div class="service-item position-relative">
+              <img src="assets/img/icons/cote.PNG" alt="">
+              <p>This course helped me freshen up on my product manager skills and land a job at Facebook! Thanks guys :)</p>
+              <div class="d-flex align-items-center">
+                <img src="assets/img/users/rf.PNG" alt="">
+                <h4>Ron F</h4>
+              </div>  
+              <hr>
+              <div class="d-flex align-items-center">
+              <img src="assets/img/icons/vid.PNG" alt="">
+              <h6 ><a href="" style="font-weight: bold; color: #5624D0;">Become a Product Manager | Learn the Skills & Get the Job</a></h6></div>
+            </div>
+            
+          </div><!-- End Service Item -->
+          <div class="col-xl-4 col-md-6 d-flex" style="border: 1px grey solid;">
+            <div class="service-item position-relative">
+              <img src="assets/img/icons/cote.PNG" alt="">
+              <p>One of the best courses on management and leadership I have come across so far. The advice is practical, and examples highly relatable. Would help anyone become a better manager.</p>
+              <div class="d-flex align-items-center">
+                <img src="assets/img/users/pw.PNG" alt="">
+                <h4>Philip W</h4>
+              </div>  
+              <hr>
+              <div class="d-flex align-items-center">
+                <img src="assets/img/icons/vid.PNG" alt="">
+                <h6><a href="" style="font-weight: bold; color: #5624D0;">[NEW] Ultimate AWS Certified Cloud Practitioner - 2023</a></h6></div>
+              </div>
+              
+          </div><!-- End Service Item -->
+       
+
+        </div>
+
+      </div>
+    </section>
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
+        <h2>Students are viewing
+        </h2>
+
+        <img src="assets/img/icons/students.PNG" style="width: 100%;" alt="">
+
+      </div>
+    </section>
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+
+      <div class="container" data-aos="fade-up">
+        <h2>Top categories        </h2>
+        
+
+        <div class="row">
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/photo/design.PNG" class="img-fluid" alt=""></div>
+              <h3 class="post-title">Design</h3>
+              </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/photo/development.PNG" class="img-fluid" alt=""></div>
+              <h3 class="post-title">Development</h3>
+              </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/photo/marketing.PNG" class="img-fluid" alt=""></div>
+              <h3 class="post-title">Marketing</h3>
+              </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/photo/itsoftware.PNG" class="img-fluid" alt=""></div>
+              <h3 class="post-title">IT and Software</h3>
+              </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/photo/personal.PNG" class="img-fluid" alt=""></div>
+              <h3 class="post-title">Personal Development</h3>
+              </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/photo/business.PNG" class="img-fluid" alt=""></div>
+              <h3 class="post-title">Business</h3>
+              </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/photo/photography.PNG" class="img-fluid" alt=""></div>
+              <h3 class="post-title">Photography</h3>
+              </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/photo/music.PNG" class="img-fluid" alt=""></div>
+              <h3 class="post-title">Music</h3>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+<img src="assets/photo/feature.PNG" style="width: 100%; margin-top: 2%;" alt="">
+    </section><!-- End Recent Blog Posts Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <h2>Trusted by over 13,400 great teams</h2>
+<p>Leading companies use the same courses to help employees keep their skills fresh.</p>
+      </div>
+      <div class="container" data-aos="zoom-out">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/photo/company1.PNG" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/photo/company2.PNG" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/photo/company3.PNG" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/photo/company4.PNG" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/photo/company5.PNG" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/photo/company6.PNG" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+      <img src="assets/photo/post.PNG" style="width: 100%; margin-top: 3%;" alt="">
+    </section><!-- End Clients Section -->
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row gy-2">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            
+            <div class="accordion accordion-flush px-xl-5" id="faqlist">
+              
+              
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="assets/photo/p1.PNG">
+                <ul>
+                  <li>Unlimited access to 22,000+ top Udemy courses, anytime, anywhere</li>
+                  <li>International course collection in 14 languages</li>
+                  <li>Top certifications in tech and business</li>
+                </ul>
+                <a style="background-color: black; color: white; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Get Udemy Business</a>
+                <a style="background-color: white; color: black; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Learn More</a>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+            <img class="col-lg-3 align-items-stretch order-1 order-lg-2 img" src="assets/photo/photo.PNG" alt="">
+        </div>
+    
+        
+      </div>
+      <!-- ======= On Focus Section ======= -->
+        </section><!-- End F.A.Q Section -->
+        <section id="onfocus" class="onfocus">
+          <div class="container-fluid p-0" data-aos="fade-up">
+    
+            <div class="row g-0">
+              <div class="col-lg-6 position-relative">
+    <img src="assets/photo/photo2.PNG" alt="">          </div>
+              <div class="col-lg-6">
+                <div class=" d-flex flex-column justify-content-center h-100">
+                  <h3>Become an instructor</h3>
+                  <p>
+                    Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.
+                  </p>
+                  <!-- <a style="background-color: black; color: white; border: 1px solid black; padding: 0.5% 1%; font-weight: bold;" href="index.html#about">Start teaching today</a> -->
+               
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </section><!-- End On Focus Section -->
+        <footer
+        id="footer"
+        class="footer"
+        style="color: white; background-color: #1c1d1f"
+      >
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-6 footer-links">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#business">Udemy Business</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#teach">Teach on Udemy</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#gettheapp">Get the app </a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#about">About us </a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#contact">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 footer-links">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#Careers">Careers</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#Blog">Blog</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#HelpSupport">Help and Support </a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#Affiliate">Affiliate </a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#Investors">Investors</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-links">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#Careers">Careers</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#Blog">Blog</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#HelpSupport">Help and Support </a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#Affiliate">Affiliate </a>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="#Investors">Investors</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="footer-legal text-center">
-        <div class="container d-flex">
-          <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-            <div><img src="./images/blackLogo.PNG" alt="" /></div>
-            <div class="copyright">&copy; 2023 Udemy, Inc.</div>
+  
+        <div class="footer-legal text-center">
+          <div class="container d-flex">
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+              <div class="copyright">&copy; 2023 Udemy, Inc.</div>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
-  </body>
+      </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
